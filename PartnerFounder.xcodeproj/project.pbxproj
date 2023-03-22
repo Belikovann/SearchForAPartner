@@ -56,15 +56,39 @@
 		C851AE6329CB924900AA78B7 /* PartnerFounder */ = {
 			isa = PBXGroup;
 			children = (
-				C851AE6429CB924900AA78B7 /* AppDelegate.swift */,
-				C851AE6629CB924A00AA78B7 /* SceneDelegate.swift */,
-				C851AE6829CB924A00AA78B7 /* ViewController.swift */,
-				C851AE6A29CB924A00AA78B7 /* Main.storyboard */,
+				C851AE7829CB926500AA78B7 /* App */,
+				C851AE7929CB929B00AA78B7 /* ViewControllers */,
+				C851AE7A29CB92AA00AA78B7 /* Storyboards */,
 				C851AE6D29CB924B00AA78B7 /* Assets.xcassets */,
-				C851AE6F29CB924B00AA78B7 /* LaunchScreen.storyboard */,
-				C851AE7229CB924B00AA78B7 /* Info.plist */,
 			);
 			path = PartnerFounder;
+			sourceTree = "<group>";
+		};
+		C851AE7829CB926500AA78B7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C851AE6429CB924900AA78B7 /* AppDelegate.swift */,
+				C851AE6629CB924A00AA78B7 /* SceneDelegate.swift */,
+				C851AE7229CB924B00AA78B7 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C851AE7929CB929B00AA78B7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C851AE6829CB924A00AA78B7 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C851AE7A29CB92AA00AA78B7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C851AE6A29CB924A00AA78B7 /* Main.storyboard */,
+				C851AE6F29CB924B00AA78B7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,12 +313,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZU3FM55GA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PartnerFounder/Info.plist;
+				INFOPLIST_FILE = PartnerFounder/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +326,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.PartnerFounder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +344,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZU3FM55GA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PartnerFounder/Info.plist;
+				INFOPLIST_FILE = PartnerFounder/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +357,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.PartnerFounder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
