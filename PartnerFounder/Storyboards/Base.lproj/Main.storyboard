@@ -23,6 +23,9 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Next partner for chat"/>
+                            <connections>
+                                <action selector="nextButtonTapped" destination="Gtc-TC-CUD" eventType="touchUpInside" id="Wc8-Eb-7Lk"/>
+                            </connections>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="showPartnerData" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="partnerCell" rowHeight="91" id="cSf-52-jmm" customClass="PartnerCell" customModule="PartnerFounder" customModuleProvider="target">
