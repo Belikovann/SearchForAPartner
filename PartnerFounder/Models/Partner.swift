@@ -9,7 +9,8 @@ import Foundation
 
 struct Partner: Codable {
     let gender: Gender
-    let name: [Name]
+    let name: Name
+    let phone: String
     let picture: Picture
 }
 

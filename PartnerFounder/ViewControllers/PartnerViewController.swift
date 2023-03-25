@@ -22,10 +22,10 @@ class PartnerViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let partnerCell = tableView.dequeueReusableCell(withIdentifier: "partnerCell", for: indexPath)
-        var content = partnerCell.defaultContentConfiguration()
-        let partner = Partner.self
-        
-        
+        guard let partnerCell = partnerCell as? PartnerCell else {return UITableViewCell() }
+        let partner = partner[indexPath.row]
+        partnerCell.configure(with: partner)
+
         return partnerCell
     }
 }

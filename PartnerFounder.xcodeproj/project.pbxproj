@@ -45,13 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C84A56EE29CF5C73009A2D13 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		C84A56F329CF5D41009A2D13 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +73,6 @@
 		C851AE6329CB924900AA78B7 /* PartnerFounder */ = {
 			isa = PBXGroup;
 			children = (
-				C84A56EE29CF5C73009A2D13 /* Views */,
 				C851AE7C29CC39BE00AA78B7 /* Models */,
 				C851AE7829CB926500AA78B7 /* App */,
 				C851AE7929CB929B00AA78B7 /* ViewControllers */,

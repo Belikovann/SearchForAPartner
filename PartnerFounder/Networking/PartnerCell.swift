@@ -9,8 +9,15 @@ import UIKit
 
 final class PartnerCell: UITableViewCell {
     
-    @IBOutlet var partnerName: UILabel!
-    @IBOutlet var gender: UILabel!
-    @IBOutlet var phone: UILabel!
-    @IBOutlet var picture: UIImageView!
+    @IBOutlet var partnerNameLabel: UILabel!
+    @IBOutlet var genderLabel: UILabel!
+    @IBOutlet var phoneLabel: UILabel!
+    @IBOutlet var pictureLabel: UIImageView!
+    
+    func configure(with partner: Partner) {
+        partnerNameLabel.text = partner.name.fullName
+        genderLabel.text = partner.gender.rawValue
+        phoneLabel.text = partner.phone
+    }
+    
 }
