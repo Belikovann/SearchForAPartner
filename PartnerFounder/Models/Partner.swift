@@ -7,26 +7,27 @@
 
 import Foundation
 
-struct Partner {
+struct Partner: Codable {
     let gender: Gender
     let name: [Name]
-    let country: String
-    let phone: String
+    let picture: Picture
 }
 
-struct Name {
+struct Name: Codable  {
     let title: String
     let first: String
     let last: String
+    
+    var fullName: String {
+        "\(title) \(first) \(last)"
+    }
 }
 
-struct Login {
-    let uuid: String
-    let username: String
-    let password: String
-}
-
-enum Gender: String {
+enum Gender: String, Codable {
     case male = "male"
     case female = "female"
+}
+
+struct Picture: Codable {
+    let large: String
 }
