@@ -25,49 +25,62 @@
                             <buttonConfiguration key="configuration" style="plain" title="Next partner for chat"/>
                         </button>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="partnerCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="partnerCell" rowHeight="91" id="cSf-52-jmm" customClass="PartnerCell" customModule="PartnerFounder" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="showPartnerData" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="partnerCell" rowHeight="91" id="cSf-52-jmm" customClass="PartnerCell" customModule="PartnerFounder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="320" height="91"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cSf-52-jmm" id="wq2-NB-2XG">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4H2-IW-cVP">
-                                            <rect key="frame" x="139.5" y="11.5" width="73" height="68.5"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlX-P9-DhA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="73" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGR-td-j8J">
-                                                    <rect key="frame" x="0.0" y="28.5" width="45" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yd1-7a-3w4">
-                                                    <rect key="frame" x="0.0" y="52.5" width="38.5" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PE0-Qt-ey9">
-                                            <rect key="frame" x="16" y="0.0" width="116" height="91"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGR-td-j8J">
+                                            <rect key="frame" x="124" y="40" width="180" height="16"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="116" id="NqG-ef-G8I"/>
+                                                <constraint firstAttribute="height" constant="16" id="fKg-or-ddx"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yd1-7a-3w4">
+                                            <rect key="frame" x="124" y="64" width="180" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="8EA-3n-inf"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PE0-Qt-ey9">
+                                            <rect key="frame" x="16" y="0.0" width="100" height="91"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="OxI-ER-C4J"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlX-P9-DhA">
+                                            <rect key="frame" x="124" y="0.0" width="180" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="cni-T8-w7D"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="PE0-Qt-ey9" firstAttribute="leading" secondItem="wq2-NB-2XG" secondAttribute="leading" constant="16" id="ViC-K8-KYT"/>
-                                        <constraint firstItem="4H2-IW-cVP" firstAttribute="centerY" secondItem="wq2-NB-2XG" secondAttribute="centerY" id="Wt5-EU-wXC"/>
-                                        <constraint firstItem="PE0-Qt-ey9" firstAttribute="top" secondItem="wq2-NB-2XG" secondAttribute="top" id="XbH-yy-t7L"/>
-                                        <constraint firstItem="4H2-IW-cVP" firstAttribute="leading" secondItem="PE0-Qt-ey9" secondAttribute="trailing" constant="7.5" id="ZQB-iM-ySM"/>
-                                        <constraint firstItem="PE0-Qt-ey9" firstAttribute="centerY" secondItem="4H2-IW-cVP" secondAttribute="centerY" id="cgm-dD-GQi"/>
+                                        <constraint firstItem="DGR-td-j8J" firstAttribute="top" secondItem="nlX-P9-DhA" secondAttribute="bottom" id="0Ta-SI-BL7"/>
+                                        <constraint firstItem="nlX-P9-DhA" firstAttribute="top" secondItem="wq2-NB-2XG" secondAttribute="top" id="38F-7K-g25"/>
+                                        <constraint firstItem="PE0-Qt-ey9" firstAttribute="leading" secondItem="wq2-NB-2XG" secondAttribute="leading" constant="16" id="8ey-gF-mWn"/>
+                                        <constraint firstItem="Yd1-7a-3w4" firstAttribute="leading" secondItem="PE0-Qt-ey9" secondAttribute="trailing" constant="8" symbolic="YES" id="9MY-nD-t3W"/>
+                                        <constraint firstAttribute="trailing" secondItem="nlX-P9-DhA" secondAttribute="trailing" constant="16" id="E8r-fP-j96"/>
+                                        <constraint firstItem="DGR-td-j8J" firstAttribute="leading" secondItem="PE0-Qt-ey9" secondAttribute="trailing" constant="8" symbolic="YES" id="OAe-jJ-VGn"/>
+                                        <constraint firstAttribute="trailing" secondItem="Yd1-7a-3w4" secondAttribute="trailing" constant="16" id="Zbx-bl-LW5"/>
+                                        <constraint firstItem="PE0-Qt-ey9" firstAttribute="centerY" secondItem="wq2-NB-2XG" secondAttribute="centerY" id="gBn-rx-Oiy"/>
+                                        <constraint firstAttribute="bottom" secondItem="PE0-Qt-ey9" secondAttribute="bottom" id="kbn-Gn-WfE"/>
+                                        <constraint firstItem="nlX-P9-DhA" firstAttribute="leading" secondItem="PE0-Qt-ey9" secondAttribute="trailing" constant="8" id="p4a-0U-BDk"/>
+                                        <constraint firstItem="nlX-P9-DhA" firstAttribute="leading" secondItem="PE0-Qt-ey9" secondAttribute="trailing" constant="8" symbolic="YES" id="pFI-dZ-FBs"/>
+                                        <constraint firstItem="Yd1-7a-3w4" firstAttribute="top" secondItem="DGR-td-j8J" secondAttribute="bottom" constant="8" symbolic="YES" id="v5n-mm-MEY"/>
+                                        <constraint firstAttribute="trailing" secondItem="DGR-td-j8J" secondAttribute="trailing" constant="16" id="wFw-Kc-aR7"/>
+                                        <constraint firstItem="PE0-Qt-ey9" firstAttribute="top" secondItem="wq2-NB-2XG" secondAttribute="top" id="ziH-4W-6b2"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -78,6 +91,7 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <integer key="value" value="10"/>

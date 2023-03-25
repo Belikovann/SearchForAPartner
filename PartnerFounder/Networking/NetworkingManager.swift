@@ -11,7 +11,7 @@ enum Link {
     case partnerURL
     
     var url: URL {
-        URL(string: "https://randomuser.me/api/")!
+        return URL(string: "https://randomuser.me/api/")!
     }
 }
 
@@ -101,16 +101,16 @@ final class NetworkManager {
         }.resume()
     }
     
-    func fetchImage(from url: URL, completion: @escaping(Result<Data, NetworkError>) -> Void) {
-        DispatchQueue.global().async {
-            guard let imageData = try? Data(contentsOf: url) else {
-                completion(.failure(.noData))
-                return
-            }
-            DispatchQueue.main.async {
-                completion(.success(imageData))
-            }
-        }
-    }
+//    func fetchPicture(from url: URL, completion: @escaping(Result<Data, NetworkError>) -> Void) {
+//        DispatchQueue.global().async {
+//            guard let imageData = try? Data(contentsOf: url) else {
+//                completion(.failure(.noData))
+//                return
+//            }
+//            DispatchQueue.main.async {
+//                completion(.success(imageData))
+//            }
+//        }
+//    }
 }
 
