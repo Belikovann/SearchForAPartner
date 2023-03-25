@@ -30,5 +30,5 @@ enum Gender: String, Codable {
 }
 
 struct Picture: Codable {
-    let large: String
+    let medium: String
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 
-class PartnerViewController: UITableViewController {
+final class PartnerViewController: UITableViewController {
 
     private var partner: [Partner] = []
     
@@ -27,6 +27,10 @@ class PartnerViewController: UITableViewController {
         partnerCell.configure(with: partner)
 
         return partnerCell
+    }
+    
+    @IBAction func nextButtonTapped() {
+        fetchPartner()
     }
 }
 
