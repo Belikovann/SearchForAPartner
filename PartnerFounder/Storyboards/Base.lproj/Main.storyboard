@@ -25,7 +25,7 @@
                             <buttonConfiguration key="configuration" style="plain" title="Next partner for chat"/>
                         </button>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="partnerCell" rowHeight="91" id="cSf-52-jmm" customClass="PartnerCell" customModule="PartnerFounder" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="partnerCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="partnerCell" rowHeight="91" id="cSf-52-jmm" customClass="PartnerCell" customModule="PartnerFounder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="320" height="91"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cSf-52-jmm" id="wq2-NB-2XG">
