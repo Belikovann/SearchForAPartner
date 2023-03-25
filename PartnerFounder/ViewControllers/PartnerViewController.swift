@@ -47,8 +47,9 @@ extension PartnerViewController {
                 let decoder = JSONDecoder()
                 
                 self?.partner = try decoder.decode([Partner].self, from: data)
-                
-                self?.tableView.reloadData()
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
+                }
             } catch let error {
                 print(error)
             }
